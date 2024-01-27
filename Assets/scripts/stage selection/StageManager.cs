@@ -10,12 +10,9 @@ public class StageManager : MonoBehaviour
     public Button buttonStage2;
     public Button buttonStage3;
     public GameObject quit;
-    public GameObject gembok;
 
     void Start()
     {
-       CheckStage();
-       CheckAndDisableGembok();
 
     }
 
@@ -25,21 +22,6 @@ public class StageManager : MonoBehaviour
         SceneManager.LoadScene("CharacterSelection");
     }
 
-    public void CheckStage()
-    {
-        int statusStage2 = PlayerPrefs.GetInt("Stage2");
-        int statusStage3 = PlayerPrefs.GetInt("StageBoss");
-
-        if (statusStage2 == 1)
-            buttonStage2.interactable = true;
-        else
-            buttonStage2.interactable = false;
-
-        if (statusStage3 == 1)
-            buttonStage3.interactable = true;
-        else
-            buttonStage3.interactable = false;
-    }
 
     public void ResetStage()
     {
@@ -64,20 +46,6 @@ public class StageManager : MonoBehaviour
     {
         SceneManager.LoadScene("CharacterSelection");
     }
-    void CheckAndDisableGembok()
-    {
-        if (buttonStage2.interactable && gembok != null)
-        {
-            gembok.SetActive(false);
-        }
-        else
-        {
-            gembok.SetActive(true);
-        }
-    }
 
-    //Stage2
-    //StageBoss
-    //1 == Unlock
-    //0 == Lock
+
 }

@@ -70,9 +70,14 @@ public class ScriptScene : MonoBehaviour
         CheckAndSetLocks();
     }
 
+
+    public void back1()
+    {
+        SceneManager.LoadScene("CharacterSelection");
+    }
     public void back2()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Main menu");
     }
 
     // Metode untuk memeriksa dan mengatur status gembok
