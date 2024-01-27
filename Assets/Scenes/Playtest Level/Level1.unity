@@ -904,9 +904,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1977873992}
-        m_TargetAssemblyTypeName: confirmation, Assembly-CSharp
-        m_MethodName: pengatur
+      - m_Target: {fileID: 1977873993}
+        m_TargetAssemblyTypeName: pause, Assembly-CSharp
+        m_MethodName: jedain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1577,7 +1577,7 @@ PrefabInstance:
     - target: {fileID: 2108221118132076876, guid: 4bf6b61408ea46043b80669f80e52188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1977873992}
+      objectReference: {fileID: 1977873993}
     - target: {fileID: 2108221118132076876, guid: 4bf6b61408ea46043b80669f80e52188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1588,7 +1588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2108221118132076876, guid: 4bf6b61408ea46043b80669f80e52188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: confirmation, Assembly-CSharp
+      value: pause, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2108221118132076876, guid: 4bf6b61408ea46043b80669f80e52188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2030,7 +2030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2252285917614404148, guid: c3c90283c57fb4d4cb8815cae0fbec78, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2252285917614404151, guid: c3c90283c57fb4d4cb8815cae0fbec78, type: 3}
       propertyPath: m_Layer
@@ -2098,7 +2098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2252285917941631953, guid: c3c90283c57fb4d4cb8815cae0fbec78, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2252285917941631965, guid: c3c90283c57fb4d4cb8815cae0fbec78, type: 3}
       propertyPath: m_Layer
@@ -2255,7 +2255,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1558607052331200274, guid: 486c56df35463c04bb9f4b2adda47032, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1558607052331200286, guid: 486c56df35463c04bb9f4b2adda47032, type: 3}
       propertyPath: m_Layer
@@ -2319,7 +2319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1558607052858383868, guid: 486c56df35463c04bb9f4b2adda47032, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1558607053314713526, guid: 486c56df35463c04bb9f4b2adda47032, type: 3}
       propertyPath: m_Layer
@@ -5581,6 +5581,7 @@ GameObject:
   - component: {fileID: 1977873991}
   - component: {fileID: 1977873990}
   - component: {fileID: 1977873992}
+  - component: {fileID: 1977873993}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -5631,7 +5632,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   confirm: {fileID: 0}
-  pengaturan: {fileID: 466071709}
+  pengaturan: {fileID: 0}
+--- !u!114 &1977873993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977873989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d6ad02eda43b049bcb1cfe6163da9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jeda: {fileID: 466071709}
 --- !u!1 &1978879510
 GameObject:
   m_ObjectHideFlags: 0
