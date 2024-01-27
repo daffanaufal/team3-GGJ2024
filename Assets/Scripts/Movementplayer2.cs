@@ -16,6 +16,7 @@ public class Movementplayer2 : MonoBehaviour
     public Transform playerPos;
 
     private Joint2D[] listJoint = null;
+    private float fartRateDrop;
     
     void Start()
     {
@@ -27,8 +28,8 @@ public class Movementplayer2 : MonoBehaviour
                 Physics2D.IgnoreCollision(colliders[i], colliders[k]);
             }
         }
-        
-        
+
+        PlayerManager.Instance.ONKentutInit += (maxEnergy, rateDrop) => fartRateDrop = rateDrop;
     }
 
     // Update is called once per frame
@@ -54,7 +55,7 @@ public class Movementplayer2 : MonoBehaviour
 
     private void Kentut()
     {
-        if (PlayerManager.Instance.GetKentut() < 15f) return;
+        if (PlayerManager.Instance.GetKentut() < fartRateDrop) return;
 
         rb.AddForce(Vector2.up * jumpforce);
         PlayerManager.Instance.Kentut();

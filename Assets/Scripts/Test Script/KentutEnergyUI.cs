@@ -10,11 +10,12 @@ namespace Test_Script
 
         private void Start()
         {
-            // PlayerManager.Instance.ONKentut += InstanceOnKentut;
+            PlayerManager.Instance.ONKentutInit += InstanceOnKentut;
         }
 
-        private void InstanceOnKentut()
+        private void InstanceOnKentut(float maxEnergy, float rateDrop)
         {
+            kentutSlider.maxValue = maxEnergy;
             
         }
 

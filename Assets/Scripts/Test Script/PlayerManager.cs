@@ -10,7 +10,7 @@ namespace Test_Script
         [SerializeField] private float rateKentut;
         [SerializeField] private float rechargeRateKentut;
 
-        public event Action ONKentut;
+        public event Action<float, float> ONKentutInit;
 
         private float _energyKentut = 0;
         
@@ -25,10 +25,7 @@ namespace Test_Script
             _energyKentut = maxEnergyKentut;
             // ONKentut += Kentut;
             InvokeRepeating("RechargeKentut", 0f, 1f);
-        }
-
-        private void Update()
-        {
+            ONKentutInit?.Invoke(maxEnergyKentut, rateKentut);
         }
 
         public void Kentut()
@@ -43,8 +40,9 @@ namespace Test_Script
 
         private void RechargeKentut()
         {
+            if (_energyKentut >= maxEnergyKentut) return;
+            
             _energyKentut += rechargeRateKentut;
-            Mathf.Clamp(_energyKentut, 0f, maxEnergyKentut);
         }
     }
 }

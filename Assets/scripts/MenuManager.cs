@@ -7,17 +7,7 @@ using UnityEngine;
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private SceneName sceneName;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public void ExitButton()
     {
         Application.Quit();
