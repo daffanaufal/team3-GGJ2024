@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Test_Script;
 using UnityEngine;
 
-public class movement : MonoBehaviour
+public class Movementplayer2 : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D rb;
@@ -14,8 +14,9 @@ public class movement : MonoBehaviour
     public float positionRadius;
     public LayerMask ground;
     public Transform playerPos;
-    public ParticleSystem fartParticles;
 
+    private Joint2D[] listJoint = null;
+    
     void Start()
     {
         Collider2D[] colliders = transform.GetComponentsInChildren < Collider2D>();
@@ -26,7 +27,8 @@ public class movement : MonoBehaviour
                 Physics2D.IgnoreCollision(colliders[i], colliders[k]);
             }
         }
-
+        
+        
     }
 
     // Update is called once per frame
@@ -53,7 +55,7 @@ public class movement : MonoBehaviour
     private void Kentut()
     {
         if (PlayerManager.Instance.GetKentut() < 15f) return;
-        fartParticles.Play();
+
         rb.AddForce(Vector2.up * jumpforce);
         PlayerManager.Instance.Kentut();
     }

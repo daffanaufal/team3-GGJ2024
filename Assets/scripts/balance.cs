@@ -7,11 +7,15 @@ public class balance : MonoBehaviour
     public float targetrotation;
     public float force;
     public Rigidbody2D rb;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    // public event Action ONJointBreaks;
+
+    // private void OnJointBreak2D(Joint2D brokenJoint)
+    // {
+    //     // Invoke stop movement / Death trigger
+    //     Debug.Log("Player is losing a limb");
+    //     ONJointBreaks?.Invoke();
+    // }
 
     // Update is called once per frame
     public void Update()
