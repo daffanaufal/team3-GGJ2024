@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movement : MonoBehaviour
+public class movement1 : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D rb;
@@ -32,18 +32,18 @@ public class movement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey("d"))
         {
             rb.AddForce(Vector2.right * playerspeed);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey("a"))
         {
             rb.AddForce(Vector2.left * playerspeed);
         }
 
         isOnGround = Physics2D.OverlapCircle(playerPos.position, positionRadius, ground);
 
-        if (isOnGround && Input.GetKeyDown(KeyCode.UpArrow))
+        if (isOnGround && Input.GetKeyDown(KeyCode.W))
         {
             rb.AddForce(Vector2.up * jumpforce);
         }
