@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class parallaxController : MonoBehaviour
 {
-    Transform cam;
+    [SerializeField] private Transform cam;
     Vector3 camStartPos;
     float distance;
 
@@ -20,7 +20,7 @@ public class parallaxController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = Camera.main.transform;
+        // cam = Camera.main.transform;
         camStartPos = cam.position;
 
         int backCount = transform.childCount;
