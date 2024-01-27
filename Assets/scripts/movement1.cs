@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Test_Script;
 using UnityEngine;
 
 public class movement1 : MonoBehaviour
@@ -13,6 +14,7 @@ public class movement1 : MonoBehaviour
     public float positionRadius;
     public LayerMask ground;
     public Transform playerPos;
+    [SerializeField] private ParticleSystem fartParticles;
 
     void Start()
     {
@@ -45,11 +47,17 @@ public class movement1 : MonoBehaviour
 
         if (isOnGround && Input.GetKeyDown(KeyCode.W))
         {
-            rb.AddForce(Vector2.up * jumpforce);
+            Kentut();
         }
     }
 
-
+    private void Kentut()
+    {
+        if (PlayerManager.Instance.GetKentut() < 15f) return;
+        fartParticles.Play();
+        rb.AddForce(Vector2.up * jumpforce);
+        PlayerManager.Instance.Kentut();
+    }
 
 
 }
