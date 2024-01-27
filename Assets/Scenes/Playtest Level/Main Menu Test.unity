@@ -130,26 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9167961446423266173, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9167961446591622919, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9167961446760342883, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9167961446900742231, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9167961447754792945, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9167961447988406028, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}
       propertyPath: sceneName
       value: 1
@@ -241,14 +221,6 @@ PrefabInstance:
     - target: {fileID: 9167961447988406033, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}
       propertyPath: m_Name
       value: UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 9167961447989430822, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9167961448184909825, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41aedd5f5b02ac948a5ed4c41770191f, type: 3}

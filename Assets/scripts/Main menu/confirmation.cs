@@ -6,6 +6,7 @@ public class confirmation : MonoBehaviour
 {
 
     public GameObject confirm;
+    public GameObject pengaturan;
     void Start()
     {
         
@@ -24,6 +25,16 @@ public class confirmation : MonoBehaviour
 
     public void tidak()
     { confirm.SetActive(false);
+    }
+
+    public void pengatur()
+    {
+        pengaturan.SetActive(true);
+    }
+
+    public void tutup()
+    {
+        pengaturan.SetActive(false );
     }
 
     public void keluar()
