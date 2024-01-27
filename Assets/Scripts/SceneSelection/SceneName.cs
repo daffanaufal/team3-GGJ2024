@@ -1,0 +1,12 @@
+﻿namespace DefaultNamespace
+{
+    public enum SceneName
+    {
+        MainMenu,
+        Level1,
+        Level2,
+        Level3,
+        Level4,
+        Level5,
+    }
+}

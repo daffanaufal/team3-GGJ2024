@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
+    [SerializeField] private SceneName sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,6 @@ public class MenuManager : MonoBehaviour
     }
     public void NewGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(sceneName.ToString());
     }
 }
