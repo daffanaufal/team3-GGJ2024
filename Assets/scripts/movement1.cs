@@ -14,7 +14,7 @@ public class movement1 : MonoBehaviour
     public float positionRadius;
     public LayerMask ground;
     public Transform playerPos;
-    [SerializeField] private ParticleSystem fartParticles;
+    public ParticleSystem fartParticles;
 
     void Start()
     {
