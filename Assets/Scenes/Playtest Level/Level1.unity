@@ -1640,6 +1640,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2995015472360695974, guid: fc95c3e2771443e4bad9d724d26d5eac, type: 3}
+      propertyPath: cameraPlayer
+      value: 
+      objectReference: {fileID: 1782808133}
     - target: {fileID: 3036459198547710374, guid: fc95c3e2771443e4bad9d724d26d5eac, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -2273,6 +2277,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8439587903560470344, guid: 03233711257b77f4c80fc8d62e814d17, type: 3}
+      propertyPath: cameraPlayer
+      value: 
+      objectReference: {fileID: 1782808133}
     - target: {fileID: 9026361408244129169, guid: 03233711257b77f4c80fc8d62e814d17, type: 3}
       propertyPath: m_Name
       value: M0P1And2
@@ -2302,6 +2310,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5461318091815132592, guid: 668d3d1e64778714c87f07e020a1ca93, type: 3}
+      propertyPath: cameraPlayer
+      value: 
+      objectReference: {fileID: 1782808133}
     - target: {fileID: 5461318091815132592, guid: 668d3d1e64778714c87f07e020a1ca93, type: 3}
       propertyPath: nextLocation.x
       value: 57.21
