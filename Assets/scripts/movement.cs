@@ -30,23 +30,7 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-
-        if (horizontalInput > 0)
-        {
-            rb.AddForce(Vector2.right * playerspeed);
-        }
-        else if (horizontalInput < 0)
-        {
-            rb.AddForce(Vector2.left * playerspeed);
-        }
-
-        isOnGround = Physics2D.OverlapCircle(playerPos.position, positionRadius, ground);
-
-        if (isOnGround && Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.AddForce(Vector2.up * jumpforce);
-        }
+       
     }
 
 
