@@ -35,18 +35,18 @@ public class Movementplayer2 : MonoBehaviour
     public void Update()
     {
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             rb.AddForce(Vector2.right * playerspeed);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.A))
         {
             rb.AddForce(Vector2.left * playerspeed);
         }
 
         isOnGround = Physics2D.OverlapCircle(playerPos.position, positionRadius, ground);
 
-        if (isOnGround && Input.GetKeyDown(KeyCode.UpArrow))
+        if (isOnGround && Input.GetKeyDown(KeyCode.W))
         {
             Kentut();
         }
