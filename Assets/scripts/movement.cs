@@ -14,6 +14,8 @@ public class movement : MonoBehaviour
     public LayerMask ground;
     public Transform playerPos;
 
+    private Joint2D[] listJoint = null;
+    
     void Start()
     {
         Collider2D[] colliders = transform.GetComponentsInChildren < Collider2D>();
@@ -24,9 +26,12 @@ public class movement : MonoBehaviour
                 Physics2D.IgnoreCollision(colliders[i], colliders[k]);
             }
         }
-
+        
+        
     }
 
+    
+    
     // Update is called once per frame
     public void Update()
     {
