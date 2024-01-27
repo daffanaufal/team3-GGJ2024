@@ -9,11 +9,15 @@ public class ExplosionTest : MonoBehaviour
 
     [SerializeField] private float explosionForceMulti = 5f;
     [SerializeField] private float explosionRadius = 5;
+    [SerializeField] private bool destroy = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         Explode();
-        Destroy(this.gameObject);
+        if (destroy)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 

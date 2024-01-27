@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Test_Script;
 using UnityEngine;
 
-public class movement1 : MonoBehaviour
+public class Movementplayer2 : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D rb;
@@ -14,8 +14,9 @@ public class movement1 : MonoBehaviour
     public float positionRadius;
     public LayerMask ground;
     public Transform playerPos;
-    [SerializeField] private ParticleSystem fartParticles;
 
+    private Joint2D[] listJoint = null;
+    
     void Start()
     {
         Collider2D[] colliders = transform.GetComponentsInChildren < Collider2D>();
@@ -26,26 +27,26 @@ public class movement1 : MonoBehaviour
                 Physics2D.IgnoreCollision(colliders[i], colliders[k]);
             }
         }
-
+        
+        
     }
 
     // Update is called once per frame
     public void Update()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKey("d"))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.AddForce(Vector2.right * playerspeed);
         }
-        else if (Input.GetKey("a"))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.AddForce(Vector2.left * playerspeed);
         }
 
         isOnGround = Physics2D.OverlapCircle(playerPos.position, positionRadius, ground);
 
-        if (isOnGround && Input.GetKeyDown(KeyCode.W))
+        if (isOnGround && Input.GetKeyDown(KeyCode.UpArrow))
         {
             Kentut();
         }
@@ -54,10 +55,8 @@ public class movement1 : MonoBehaviour
     private void Kentut()
     {
         if (PlayerManager.Instance.GetKentut() < 15f) return;
-        fartParticles.Play();
+
         rb.AddForce(Vector2.up * jumpforce);
         PlayerManager.Instance.Kentut();
     }
-
-
 }

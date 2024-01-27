@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Test_Script;
 using UnityEngine;
 
 public class movement : MonoBehaviour
@@ -13,6 +14,7 @@ public class movement : MonoBehaviour
     public float positionRadius;
     public LayerMask ground;
     public Transform playerPos;
+    public ParticleSystem fartParticles;
 
     void Start()
     {
@@ -30,7 +32,6 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -45,11 +46,15 @@ public class movement : MonoBehaviour
 
         if (isOnGround && Input.GetKeyDown(KeyCode.UpArrow))
         {
-            rb.AddForce(Vector2.up * jumpforce);
+            Kentut();
         }
     }
 
-
-
-
+    private void Kentut()
+    {
+        if (PlayerManager.Instance.GetKentut() < 15f) return;
+        fartParticles.Play();
+        rb.AddForce(Vector2.up * jumpforce);
+        PlayerManager.Instance.Kentut();
+    }
 }
