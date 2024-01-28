@@ -35,6 +35,7 @@ public class movement : MonoBehaviour
         }
         PlayerManager.Instance.ONDeath += InstanceOnDeath;
         currentCameraPlayer = GameObject.FindWithTag("SecondCamera").GetComponent<Camera>();
+        gas = GameObject.FindWithTag("SFXGas").GetComponent<AudioSource>();
     }
 
     private void InstanceOnDeath(bool dead, GameObject charParent)
