@@ -151,7 +151,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.09, y: 0}
-  m_ConnectedAnchor: {x: 0.10977845, y: 0.01685716}
+  m_ConnectedAnchor: {x: 0.1097788, y: 0.016857216}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 6569390416835098832}
   m_Layer: 0
   m_Name: chara 2 w blood
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -378,7 +378,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.06}
-  m_ConnectedAnchor: {x: -0.00007775182, y: 0.09417808}
+  m_ConnectedAnchor: {x: -0.000076954646, y: 0.09417803}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -574,7 +574,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.000051566032, y: 0.011043165}
+  m_ConnectedAnchor: {x: 0.00005197236, y: 0.01104312}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -735,7 +735,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.07, y: -0.16}
-  m_ConnectedAnchor: {x: 0.05379949, y: -0.1290161}
+  m_ConnectedAnchor: {x: 0.05380016, y: -0.12901613}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -923,7 +923,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.07, y: -0.16}
-  m_ConnectedAnchor: {x: -0.07028344, y: -0.12896647}
+  m_ConnectedAnchor: {x: -0.070282616, y: -0.1289665}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1325,7 +1325,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.09, y: 0}
-  m_ConnectedAnchor: {x: -0.109689996, y: 0.028089}
+  m_ConnectedAnchor: {x: -0.10968945, y: 0.02808901}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

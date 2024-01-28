@@ -74,7 +74,7 @@ public class ScriptScene : MonoBehaviour
     }
     public void back2()
     {
-        SceneManager.LoadScene("Mainmenu");
+        SceneManager.LoadScene("Main menu");
     }
 
     // Metode untuk memeriksa dan mengatur status gembok

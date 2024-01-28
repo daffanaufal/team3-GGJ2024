@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Test_Script
 {
@@ -7,6 +8,9 @@ namespace Test_Script
     {
         private ParticleSystem blood;
         private balance balance;
+
+        
+
         private void Start()
         {
             blood = GetComponentInChildren<ParticleSystem>();
@@ -24,6 +28,8 @@ namespace Test_Script
             {
                 if (balance != null) balance.enabled = false;
                 blood.Play();
+                //SFX here
+                SoundFX.instantiate.Hit();
             }
         }
     }

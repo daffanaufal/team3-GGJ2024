@@ -102,7 +102,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.06, y: -0.05}
-  m_ConnectedAnchor: {x: 0.035729848, y: 0.0013237735}
+  m_ConnectedAnchor: {x: 0.035729937, y: 0.0013236471}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -444,7 +444,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.01, y: -0.1}
-  m_ConnectedAnchor: {x: -0.006082392, y: 0.028977305}
+  m_ConnectedAnchor: {x: -0.0060822573, y: 0.028976856}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -614,7 +614,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.39}
-  m_ConnectedAnchor: {x: -0.0022394587, y: -0.08245553}
+  m_ConnectedAnchor: {x: -0.0022394932, y: -0.08245726}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -725,7 +725,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.03, y: -0.14}
-  m_ConnectedAnchor: {x: -0.04101629, y: -0.0047566937}
+  m_ConnectedAnchor: {x: -0.04101656, y: -0.004757961}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1883,7 +1883,7 @@ GameObject:
   - component: {fileID: 5408025097659229560}
   m_Layer: 0
   m_Name: chara cewek
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2037,7 +2037,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.067, y: -0.36}
-  m_ConnectedAnchor: {x: 0.04369923, y: -0.19029614}
+  m_ConnectedAnchor: {x: 0.043699432, y: -0.19029734}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2175,7 +2175,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.02, y: -0.36}
-  m_ConnectedAnchor: {x: -0.032282956, y: -0.19029614}
+  m_ConnectedAnchor: {x: -0.032282986, y: -0.19029734}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

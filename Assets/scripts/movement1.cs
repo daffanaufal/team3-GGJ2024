@@ -21,6 +21,7 @@ public class movement1 : MonoBehaviour
     [SerializeField] private Vector3 spawnPos;
     [SerializeField] private GameObject clone;
 
+    public AudioSource gas;
     void Start()
     {
         Collider2D[] colliders = transform.GetComponentsInChildren < Collider2D>();
@@ -72,7 +73,7 @@ public class movement1 : MonoBehaviour
 
         if (isOnGround && Input.GetKeyDown(KeyCode.W))
         {
-            Kentut();
+            StartCoroutine(Kentut_Gas());
         }
     }
 
@@ -83,6 +84,11 @@ public class movement1 : MonoBehaviour
         rb.AddForce(Vector2.up * jumpforce);
         PlayerManager.Instance.Kentut();
     }
-
+    IEnumerator Kentut_Gas()
+    {
+             gas.Play();
+             yield return new WaitForSeconds(0.05f);
+             Kentut();
+    }
 
 }
