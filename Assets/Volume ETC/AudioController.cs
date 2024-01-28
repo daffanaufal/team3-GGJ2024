@@ -32,6 +32,7 @@ public class AudioController : MonoBehaviour
     {
         audio = gameObject.GetComponent<AudioSource>();
 
+        /*
         if (PlayerPrefs.HasKey("MusicVolume"))
         {
             LoadMusicVolume();
@@ -50,6 +51,7 @@ public class AudioController : MonoBehaviour
         {
             SetSFXVolume();
         }
+        */
 
         if (!AudioBegin)
         {
