@@ -13262,7 +13262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2029429150}
   - component: {fileID: 2029429152}
-  - component: {fileID: 2029429151}
+  - component: {fileID: 2029429153}
   m_Layer: 0
   m_Name: sensor2
   m_TagString: Untagged
@@ -13285,20 +13285,6 @@ Transform:
   m_Father: {fileID: 1699192089}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2029429151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029429149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0463e663816598141a0fdaddc054fae5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  win1: {fileID: 0}
-  win2: {fileID: 679388333}
 --- !u!212 &2029429152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13351,6 +13337,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2029429153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029429149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3f335bcabc7e34681b1067544127c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  men1: {fileID: 0}
+  win2: {fileID: 679388333}
 --- !u!1 &2050258514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7449726349210094110, guid: 8301183ac6210d44890af02fa35c245c, type: 3}
