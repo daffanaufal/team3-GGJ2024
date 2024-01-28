@@ -9,6 +9,8 @@ namespace Test_Script
         [SerializeField] private float maxEnergyKentut;
         [SerializeField] private float rateKentut;
         [SerializeField] private float rechargeRateKentut;
+        [SerializeField] private GameObject clonePerempuan;
+        [SerializeField] private GameObject cloneLakilaki;
 
         public event Action<float, float> ONKentutInit;
 
@@ -44,5 +46,29 @@ namespace Test_Script
             
             _energyKentut += rechargeRateKentut;
         }
+
+        public event Action<bool, GameObject> ONDeath;
+
+        public void Death(bool isDeed, GameObject characterParent)
+        {
+            ONDeath?.Invoke(isDeed, characterParent);
+        }
+        
+        public event Action<bool, GameObject, Vector3> ONRestartPlayer;
+        public void RestartPlayer(bool isCewek, GameObject playerPrefabs, Vector3 spawnPos)
+        {
+            ONRestartPlayer?.Invoke(isCewek, playerPrefabs, spawnPos);
+            if (isCewek)
+            {
+                Instantiate(clonePerempuan, spawnPos, Quaternion.Euler(0,0,0));
+            }
+            else
+            {
+                Instantiate(cloneLakilaki, spawnPos, Quaternion.Euler(0,0,0));
+            }
+            // GameObject newPlayer = Instantiate(playerPrefabs, spawnPos, Quaternion.Euler(0,0,0));
+
+        }
+
     }
 }

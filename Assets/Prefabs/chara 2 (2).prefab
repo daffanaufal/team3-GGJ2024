@@ -931,6 +931,9 @@ MonoBehaviour:
     m_Bits: 64
   playerPos: {fileID: 601925006870408775}
   fartParticles: {fileID: 5426380513858462297}
+  currentCameraPlayer: {fileID: 0}
+  spawnPos: {x: 0, y: 0, z: 0}
+  clone: {fileID: 6569390416835098834, guid: d3acb03a96cdb3446a4ddb151149c1a3, type: 3}
 --- !u!1 &601925007060772448
 GameObject:
   m_ObjectHideFlags: 0

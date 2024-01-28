@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Test_Script;
 using UnityEngine;
 
@@ -15,6 +16,10 @@ public class movement1 : MonoBehaviour
     public LayerMask ground;
     public Transform playerPos;
     public ParticleSystem fartParticles;
+    private bool isDead;
+    [SerializeField] private Camera currentCameraPlayer;
+    [SerializeField] private Vector3 spawnPos;
+    [SerializeField] private GameObject clone;
 
     void Start()
     {
@@ -26,12 +31,32 @@ public class movement1 : MonoBehaviour
                 Physics2D.IgnoreCollision(colliders[i], colliders[k]);
             }
         }
+        PlayerManager.Instance.ONDeath += InstanceOnDeath;
+        currentCameraPlayer = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
 
     }
 
+    private void InstanceOnDeath(bool dead, GameObject charParent)
+    {
+        if (charParent == this.gameObject)
+        {
+            isDead = dead;
+        }
+        
+    }
     // Update is called once per frame
     public void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            // Instantiate(clone, spawnPos, Quaternion.Euler(0,0,0));
+            currentCameraPlayer.transform.DOMoveX(0, 1).SetEase(Ease.InOutCubic);
+            PlayerManager.Instance.RestartPlayer(true, clone, spawnPos);
+            Destroy(this.gameObject);
+        }
+        
+        if (isDead) return;
+
         float horizontalInput = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetKey("d"))

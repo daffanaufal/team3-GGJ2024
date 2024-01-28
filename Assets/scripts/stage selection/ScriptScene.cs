@@ -47,9 +47,6 @@ public class ScriptScene : MonoBehaviour
     }
 
     
-
-  
-
     public void Finish()
     {
        
