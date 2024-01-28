@@ -1481,10 +1481,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 1bcdd26 (Merge pull request #19 from daffanaufal/test)
 --- !u!1 &280096292
 GameObject:
   m_ObjectHideFlags: 0
