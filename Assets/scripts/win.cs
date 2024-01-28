@@ -39,10 +39,11 @@ public class win : MonoBehaviour
     {
         SceneManager.LoadScene("StageSelection");
     }
-    private void OnTriggerEnter(Collider other)
+    private void  OnTriggerEnter2D(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player Win");
             // Dapatkan objek pemain
             GameObject player = other.gameObject;
 

@@ -3811,6 +3811,7 @@ GameObject:
   - component: {fileID: 718050312}
   - component: {fileID: 718050314}
   - component: {fileID: 718050313}
+  - component: {fileID: 718050315}
   m_Layer: 0
   m_Name: sensor1
   m_TagString: Untagged
@@ -3899,6 +3900,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &718050315
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718050311}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &727903752
 GameObject:
   m_ObjectHideFlags: 0
@@ -12815,6 +12842,7 @@ GameObject:
   - component: {fileID: 2029429150}
   - component: {fileID: 2029429152}
   - component: {fileID: 2029429153}
+  - component: {fileID: 2029429154}
   m_Layer: 0
   m_Name: sensor2
   m_TagString: Untagged
@@ -12903,6 +12931,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   men1: {fileID: 0}
   win2: {fileID: 679388333}
+--- !u!61 &2029429154
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029429149}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2050258514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7449726349210094110, guid: 8301183ac6210d44890af02fa35c245c, type: 3}
