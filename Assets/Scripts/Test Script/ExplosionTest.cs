@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ExplosionTest : MonoBehaviour
 {
+
+    public AudioSource playerhurt;
     private Collider2D[] inExplosionRadius = null;
 
     [SerializeField] private float explosionForceMulti = 5f;
@@ -24,6 +26,8 @@ public class ExplosionTest : MonoBehaviour
     private void Explode()
     {
         inExplosionRadius = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
+
+        playerhurt.Play();
 
         foreach (Collider2D objectCollider in inExplosionRadius)
         {

@@ -16,6 +16,8 @@ public class movement : MonoBehaviour
     public Transform playerPos;
     public ParticleSystem fartParticles;
 
+    public AudioSource gas;
+
     void Start()
     {
         Collider2D[] colliders = transform.GetComponentsInChildren < Collider2D>();
@@ -46,7 +48,7 @@ public class movement : MonoBehaviour
 
         if (isOnGround && Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Kentut();
+            StartCoroutine(Kentut_Gas());
         }
     }
 
@@ -56,5 +58,11 @@ public class movement : MonoBehaviour
         fartParticles.Play();
         rb.AddForce(Vector2.up * jumpforce);
         PlayerManager.Instance.Kentut();
+    }
+    IEnumerator Kentut_Gas()
+    {
+        gas.Play();
+        yield return new WaitForSeconds(0.05f);
+        Kentut();
     }
 }
