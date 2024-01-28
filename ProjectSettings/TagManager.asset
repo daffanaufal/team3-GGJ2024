@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SecondCamera
   - SFXGas
+  - FirstCamera
   layers:
   - Default
   - TransparentFX

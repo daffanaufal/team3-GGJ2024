@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pause : MonoBehaviour
 {
@@ -29,5 +30,10 @@ public class pause : MonoBehaviour
         jeda.SetActive(false);
         Time.timeScale = 1f;
 
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main menu");
     }
 }

@@ -26,7 +26,7 @@ namespace Test_Script
         {
             _energyKentut = maxEnergyKentut;
             // ONKentut += Kentut;
-            InvokeRepeating("RechargeKentut", 0f, 1f);
+            InvokeRepeating("RechargeKentut", 0f, .2f);
             ONKentutInit?.Invoke(maxEnergyKentut, rateKentut);
         }
 

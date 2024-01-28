@@ -33,13 +33,13 @@ public class movement1 : MonoBehaviour
             }
         }
         PlayerManager.Instance.ONDeath += InstanceOnDeath;
-        currentCameraPlayer = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        currentCameraPlayer = GameObject.FindWithTag("FirstCamera").GetComponent<Camera>();
         gas = GameObject.FindWithTag("SFXGas").GetComponent<AudioSource>();
     }
 
     private void InstanceOnDeath(bool dead, GameObject charParent)
     {
-        if (charParent == this.gameObject)
+        if (charParent.name == this.gameObject.name)
         {
             isDead = dead;
         }

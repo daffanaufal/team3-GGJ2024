@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
@@ -39,7 +40,8 @@ public class win1 : MonoBehaviour
     {
         SceneManager.LoadScene("StageSelection");
     }
-    private void OnTriggerEnter2D(Collider other)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
